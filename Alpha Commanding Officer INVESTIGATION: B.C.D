@@ -1,25 +1,14 @@
-var password;
+// Define the correct password
+const correctPassword = "ALPHA#1";
 
-var pass1="201248220154382012482";
+// Prompt the user for a password
+const password = prompt("Please enter the password:");
 
-password=prompt('Please enter your password to view this page!',' ');
-
-if (password==pass1)
-{ 
-    function m() {
-    var r='',c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-    for ( var i = 0; i < 5; i++ ) {
-      r += c.charAt(Math.floor(Math.random() * 36));
-   }
-   return r;
+// Check if the entered password matches the correct password
+if (password === correctPassword) {
+  // If the passwords match, redirect the user to a new link
+  window.location.href = "hhttps://vault.fbi.gov/united-states-capitol-violence-and-related-events-of-january-6-2021/united-states-capitol-violence-and-related-events-of-january-6-2021-part-20/view";
+} else {
+  // If the passwords do not match, display an error message
+  alert("Incorrect password. Please try again.");
 }
-
-})
-    alert("WELCOME DENNIS CRIPPS, ALPHA COMMANDING OFFICER")
-}
-    
-
-else
-   {
-    alert("WRONG PASSWORD REFER TO ALPHA OFFICER HANDBOOK FOR AID")
-    }
